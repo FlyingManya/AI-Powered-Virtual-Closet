@@ -1,6 +1,3 @@
-# AI-Powered-Virtual-Closet
-https://www.youtube.com/watch?v=vnKdGxzoMSU
-
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/cb544a7b-cbc0-4ada-9ea8-9dba9d4ded99" />
 <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/f352304a-cb8a-4a58-972b-475ec2898cea" />
 <img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/4206deed-9e93-46f2-ba75-4a14967f8688" />
