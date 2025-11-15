@@ -1,0 +1,465 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	background: #7F7FD5;
+	background: -webkit-linear-gradient(to right, #fcb3d5, #f8aa7e, #eb3a7e);
+	/* background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); */
+	background: linear-gradient(to right,  #fcb3d5, #f8aa7e, #eb3a7e);
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+    /* margin-right: 30px; */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px; /* Adjust font size */
+}
+
+.nav-links a .new {
+    font-size: 10px; /* Adjust smaller font size for 'new' */
+    color: #ff3f6c; /* Set color to pink */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 50%;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar input[type="text"] {
+    margin-left: 3px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #e6e7ebfa; /* Light ochre background */
+    transition: background-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    background-color: white; /* Change to white on focus */
+}
+
+.search-bar button {
+    left: -4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.profileimg {
+	height: 28px;
+	width: 28px;
+	/* border: 1.5px solid #f5f6fa; */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.icons div {
+    margin-left: 18px;
+    text-align: center;
+	cursor: pointer;
+}
+
+.icons i {
+    font-size: 18px; /* Adjust icon size */
+    color: #555; /* Icon color */
+}
+
+.icons span {
+    display: block;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .search-container {
+        max-width: 100%;
+    }
+
+    .search-bar {
+        max-width: 300px;
+    }
+}
+
+.chat {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.card {
+	height: 500px;
+	border-radius: 15px !important;
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.contacts_body {
+	padding: 0.75rem 0 !important;
+	overflow-y: auto;
+	white-space: nowrap;
+}
+
+.msg_card_body {
+	overflow-y: auto;
+}
+
+.card-header {
+	border-radius: 15px 15px 0 0 !important;
+	border-bottom: 0 !important;
+}
+
+.card-footer {
+	border-radius: 0 0 15px 15px !important;
+	border-top: 0 !important;
+}
+
+.container {
+	align-content: center;
+}
+
+.search {
+	border-radius: 15px 0 0 15px !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: 0 !important;
+	color: white !important;
+}
+
+.search:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+
+.type_msg {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: 0 !important;
+	color: white !important;
+	height: 60px !important;
+	overflow-y: auto;
+}
+
+.type_msg:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+
+.attach_btn {
+	border-radius: 15px 0 0 15px !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: 0 !important;
+	color: white !important;
+	cursor: pointer;
+}
+
+.send_btn {
+	border-radius: 0 15px 15px 0 !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: 0 !important;
+	color: white !important;
+	cursor: pointer;
+}
+
+.search_btn {
+	border-radius: 0 15px 15px 0 !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: 0 !important;
+	color: white !important;
+	cursor: pointer;
+}
+
+.contacts {
+	list-style: none;
+	padding: 0;
+}
+
+.contacts li {
+	width: 100% !important;
+	padding: 5px 10px;
+	margin-bottom: 15px !important;
+}
+
+.active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.user_img {
+	height: 60px;
+	width: 60px;
+	border: 1.5px solid #f5f6fa;
+}
+
+.user_img_msg {
+	height: 40px;
+	width: 40px;
+	border: 1.5px solid #f5f6fa;
+}
+
+.img_cont {
+	position: relative;
+	height: 70px;
+	width: 70px;
+}
+
+.img_cont_msg {
+	height: 40px;
+	width: 40px;
+}
+
+.online_icon {
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	background-color: #4cd137;
+	border-radius: 50%;
+	bottom: 13px;
+	right: 13px;
+	border: 1.5px solid white;
+}
+
+.offline {
+	background-color: #c23616 !important;
+}
+
+.user_info {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 15px;
+}
+
+.user_info span {
+	font-size: 20px;
+	color: white;
+}
+
+.user_info p {
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.video_cam {
+	margin-left: 280px;
+	margin-top: 5px;
+}
+
+.video_cam span {
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.msg_container {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10px;
+	border-radius: 25px;
+	background-color: #fdadbe;
+	padding: 10px;
+	position: relative;
+	overflow: hidden; /* Ensure content fits within the border-radius */
+    display: flex; /* Use flexbox to ensure image fits within container */
+    /* justify-content: center; Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.msg_container .product-image {
+	width: 100%; /* Make the image fit the width of the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 15px;
+}
+
+.msg_container_send {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	border-radius: 25px;
+	background-color: #c8ff7f;
+	padding: 10px;
+	position: relative;
+	overflow: hidden; /* Ensure content fits within the border-radius */
+    display: flex; /* Use flexbox to ensure image fits within container */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.msg_container_send .product-image {
+	width: 100%; /* Make the image fit the width of the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 15px;
+}
+
+.msg_time {
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 10px;
+}
+
+.msg_time_send {
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 10px;
+}
+
+.msg_head {
+	position: relative;
+}
+
+#action_menu_btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.action_menu {
+	z-index: 1;
+	position: absolute;
+	padding: 15px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 15px;
+	top: 30px;
+	right: 15px;
+	display: none;
+}
+
+.action_menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.action_menu ul li {
+	width: 100%;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+	padding-right: 10px;
+}
+
+.action_menu ul li:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+@media(max-width: 576px) {
+	.contacts_card {
+		margin-bottom: 15px !important;
+	}
+}
